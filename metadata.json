@@ -1,0 +1,6 @@
+{
+  "name": "Sunny - 3D AI Desktop Companion & Agent",
+  "description": "A 3D AI desktop companion and autonomous agent for Windows powered by Gemini, featuring expressive VRM avatars, voice interaction, and desktop tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

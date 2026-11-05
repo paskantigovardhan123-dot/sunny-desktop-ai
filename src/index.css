@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0px) scale(0.5);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-90px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes slowPulseGlow {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.22;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.6;
+  }
+}
+
+@keyframes slowOrbitRing {
+  0% {
+    transform: rotate(0deg) scaleY(0.32);
+  }
+  100% {
+    transform: rotate(360deg) scaleY(0.32);
+  }
+}
+
+.animate-float-particle {
+  animation: floatParticle 2.8s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: slowPulseGlow 2.2s ease-in-out infinite;
+}
+
+.animate-orbit-ring {
+  animation: slowOrbitRing 7s linear infinite;
+}

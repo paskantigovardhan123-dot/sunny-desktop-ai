@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9A3D" />
+      <stop offset="50%" stop-color="#FF5E62" />
+      <stop offset="100%" stop-color="#7B2CBF" />
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066" />
+      <stop offset="100%" stop-color="#FFA200" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <circle cx="256" cy="256" r="140" fill="url(#sunGlow)" filter="url(#glow)" opacity="0.4" />
+  <circle cx="256" cy="256" r="110" fill="url(#sunGlow)" />
+  <!-- Cute stylized VRM avatar face/headphones -->
+  <!-- Cute eyes -->
+  <ellipse cx="215" cy="245" rx="14" ry="20" fill="#1E1B4B" />
+  <ellipse cx="297" cy="245" rx="14" ry="20" fill="#1E1B4B" />
+  <circle cx="210" cy="238" r="6" fill="#FFFFFF" />
+  <circle cx="292" cy="238" r="6" fill="#FFFFFF" />
+  <!-- Sweet smile -->
+  <path d="M 235 272 Q 256 290 277 272" stroke="#1E1B4B" stroke-width="7" stroke-linecap="round" fill="none" />
+  <!-- Rosy cheeks -->
+  <circle cx="195" cy="265" r="12" fill="#FF477E" opacity="0.6" />
+  <circle cx="317" cy="265" r="12" fill="#FF477E" opacity="0.6" />
+  <!-- Futuristic cyber antenna / headset -->
+  <path d="M 145 256 A 115 115 0 0 1 367 256" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.85" />
+  <rect x="132" y="235" width="24" height="46" rx="12" fill="#3B82F6" stroke="#FFFFFF" stroke-width="4" />
+  <rect x="356" y="235" width="24" height="46" rx="12" fill="#3B82F6" stroke="#FFFFFF" stroke-width="4" />
+  <!-- Star spark -->
+  <path d="M 370 140 Q 385 140 385 125 Q 385 140 400 140 Q 385 140 385 155 Q 385 140 370 140 Z" fill="#FFE066" />
+</svg>
